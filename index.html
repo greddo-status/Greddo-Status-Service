@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GREDDO</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/GR4.png">
+  <link rel="shortcut icon" href="assets/GR4.ico" type="image/x-icon">
+</head>
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/GR4.png">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <h1>Welcome!</h1>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo"><span class="g">G</span>REDDO</div>
+    <nav>
+      <ul>
+        <li><button id="events-btn">Events</button></li>
+      </ul>
+    </nav>
+    <div class="version">v1.0</div>
+  </header>
+
+  <!-- Events Modal -->
+  <div id="events-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-events" class="close">&times;</span>
+      <h2>Upcoming Events</h2>
+      <ul id="events-list">
+        <li>
+          <strong>Halloween Event</strong><br>
+          From 02. Oct. – Spooky vibes in GREDDO Germany!
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Server Status -->
+    <section class="card">
+      <h2>Server Status</h2>
+      <div class="status-box">
+        <span>Website</span>
+        <span id="website-status" class="status online">Online</span>
+      </div>
+      <div class="status-box">
+        <span>GREDDO | Germany</span>
+        <span id="germany-status" class="status online">Online</span>
+      </div>
+    </section>
+
+    <!-- Dev Log -->
+    <section class="card">
+      <h2>Dev Log</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="date">26.09.2025</div>
+          <div class="content">
+            <h3>Update (v1.8): New Cleaning System, New Fall Decoration, New AFK System.</h3>
+            <span class="tag update">Update</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">02.10.2025</div>
+          <div class="content">
+            <h3>SOON MORE DETAILS</h3>
+            <span class="tag update">SOON</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Forum -->
+    <section class="card">
+      <h2>Community Forum</h2>
+      <input type="text" id="post-title" placeholder="Post title">
+      <textarea id="post-content" placeholder="Write your question..."></textarea>
+      <button id="create-post">Create Post</button>
+      <div id="forum-posts"></div>
+    </section>
+
+    <!-- Support -->
+    <section class="card">
+      <h2>Support</h2>
+      <p>Need help? Contact us at <a href="mailto:support@greddo.com">support@greddo.com</a></p>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
